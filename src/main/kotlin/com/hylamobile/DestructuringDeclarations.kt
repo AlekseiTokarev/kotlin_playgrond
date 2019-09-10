@@ -15,13 +15,14 @@ fun main(args: Array<String>) {
     val (phone1, phone2) = getPhoneList();
     println("$phone2 from getPhoneList()")
 
-    val map = mapOf("foo" to "bar", "foo1" to "bar1")
-    for ((key, value) in map){
+    val map = mapOf(1 to "One",
+                    2 to "Two",
+                    3 to "Three")
+
+    for ((key, value) in map) {
         println("$value")
     }
 
-}
-
-class Main {
 
 }
+
