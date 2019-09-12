@@ -1,6 +1,6 @@
 package com.hylamobile
 
-fun getContactDetail(): Pair<String, String> {
+fun getContacts(): Pair<String, String> {
     return Pair("87897878798798", "email@gmail.com");
 }
 
@@ -9,7 +9,7 @@ fun getPhoneList(): List<String> {
 }
 
 fun main(args: Array<String>) {
-    val (phone, email) = getContactDetail();
+    val (phone, email) = getContacts();
     println("$email form getPhoneList()")
 
     val (phone1, phone2) = getPhoneList();
@@ -23,6 +23,10 @@ fun main(args: Array<String>) {
         println("$value")
     }
 
-
+    fun loop(items : Array<ItemDto>) {
+        for ((index, element) in items.withIndex()) {
+            println("$index: $element")
+        }
+    }
 }
 
