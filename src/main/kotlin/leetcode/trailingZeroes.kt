@@ -12,15 +12,15 @@ fun trailingZeroes(n: Int): Int {
     return counter;
 }
 
-    var counter = 0
+var counter = 0
 
-    fun dividesToTen(a: BigInteger) {
-        val big10 = BigInteger.valueOf(10L)
-        if (a.remainder(big10) == BigInteger.ZERO) {
-            counter++
-            dividesToTen(a.divide(big10))
-        }
+fun dividesToTen(a: BigInteger) {
+    val big10 = BigInteger.valueOf(10L)
+    if (a.remainder(big10) == BigInteger.ZERO) {
+        counter++
+        dividesToTen(a.divide(big10))
     }
+}
 
 fun countFactorial(n: Int): BigInteger {
     var factorial = BigInteger.ONE;
