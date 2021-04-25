@@ -1,5 +1,7 @@
 package leetcode
 
+import leetcode.dto.ListNode
+
 //203 not implemented
 class RemoveLinkedListElements {
 
@@ -31,6 +33,3 @@ class RemoveLinkedListElements {
 
 }
 
-class ListNode(val value: Int) {
-    var next: ListNode? = null
-}
