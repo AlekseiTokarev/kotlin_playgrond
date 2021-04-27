@@ -1,6 +1,6 @@
 package leetcode
 
-import leetcode.dto.ListNode
+import leetcode.collection.ListNode
 
 //203 not implemented
 class RemoveLinkedListElements {
